@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brother in Lawns | Clayton, Ohio</title>
+  <meta name="description" content="Brother in Lawns provides grass cutting, edging, weed pulling, bush trimming, cleanups, and other lawn-care services in Clayton, Ohio.">
+  <style>
+    :root {
+      --green: #1f7a3b;
+      --dark: #12351d;
+      --light: #f3faef;
+      --accent: #9bd35b;
+      --white: #fff;
+      --text: #243126;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--light);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--dark);
+      color: white;
+      padding: 18px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .logo { font-size: 1.45rem; font-weight: 800; }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 700;
+    }
+    nav a:hover { color: var(--accent); }
+    .hero {
+      min-height: 78vh;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 70px 6%;
+      color: white;
+      background:
+        linear-gradient(rgba(12, 55, 25, .72), rgba(12, 55, 25, .72)),
+        radial-gradient(circle at 20% 20%, #65a844, #174e27 60%, #0c2b15);
+    }
+    .hero h1 { font-size: clamp(3rem, 9vw, 6.5rem); line-height: .95; }
+    .hero p { font-size: 1.25rem; margin: 24px auto; max-width: 650px; }
+    .buttons { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .btn {
+      display: inline-block;
+      padding: 13px 22px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 800;
+      background: var(--accent);
+      color: #15321b;
+    }
+    .btn.alt { background: white; color: var(--dark); }
+    section { padding: 70px 6%; max-width: 1100px; margin: auto; }
+    .section-title { text-align: center; margin-bottom: 35px; }
+    .section-title h2 { font-size: 2.2rem; color: var(--dark); }
+    .section-title p { margin-top: 8px; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 18px;
+      box-shadow: 0 8px 25px rgba(18,53,29,.08);
+      border: 1px solid #e2efdf;
+    }
+    .card h3 { color: var(--green); margin-bottom: 7px; }
+    .about {
+      background: white;
+      border-radius: 24px;
+      padding: 35px;
+      box-shadow: 0 8px 25px rgba(18,53,29,.08);
+      text-align: center;
+    }
+    .estimate {
+      background: var(--dark);
+      color: white;
+      border-radius: 24px;
+      padding: 40px;
+      text-align: center;
+    }
+    .estimate h2 { font-size: 2.3rem; margin-bottom: 10px; }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+      margin-top: 25px;
+    }
+    .contact-box {
+      background: white;
+      padding: 25px;
+      border-radius: 18px;
+      text-align: center;
+    }
+    .contact-box a { color: var(--green); font-weight: 800; word-break: break-word; }
+    footer {
+      background: #0c2413;
+      color: white;
+      text-align: center;
+      padding: 25px 6%;
+    }
+    @media (max-width: 650px) {
+      header { flex-direction: column; gap: 10px; }
+      nav a { margin: 0 7px; font-size: .9rem; }
+      .hero { min-height: 70vh; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">🌱 Brother in Lawns</div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <h1>Brother in Lawns</h1>
+        <p>Reliable lawn care from Dyson & Trevor in Clayton, Ohio.</p>
+        <div class="buttons">
+          <a class="btn" href="tel:9375542896">Call for an Estimate</a>
+          <a class="btn alt" href="mailto:brotherinlawns937@gmail.com?subject=Lawn%20Care%20Estimate">Email Us</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="section-title">
+        <h2>Our Services</h2>
+        <p>Need it done in the yard? Ask us about it.</p>
+      </div>
+      <div class="cards">
+        <div class="card"><h3>Grass Cutting</h3><p>Keep your lawn looking neat and maintained.</p></div>
+        <div class="card"><h3>Edge Trimming</h3><p>Clean edges around sidewalks, driveways, and lawn borders.</p></div>
+        <div class="card"><h3>Weed Pulling</h3><p>Remove unwanted weeds and help tidy up your yard.</p></div>
+        <div class="card"><h3>Bush Trimming</h3><p>Trim and shape bushes for a cleaner look.</p></div>
+        <div class="card"><h3>Lawn Cleanup</h3><p>General cleanup and other seasonal yard needs.</p></div>
+        <div class="card"><h3>Other Lawn Needs</h3><p>Have a different job? Contact us and ask.</p></div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="about">
+        <div class="section-title">
+          <h2>About Brother in Lawns</h2>
+        </div>
+        <p>We're Dyson and Trevor, the team behind Brother in Lawns. We provide lawn-care services around Clayton, Ohio and work hard to give every yard the care it needs.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="estimate">
+        <h2>Need Your Lawn Taken Care Of?</h2>
+        <p>Prices are estimates and can vary depending on the size and work needed. Contact us for a personalized estimate.</p>
+        <br>
+        <a class="btn" href="tel:9375542896">📞 937-554-2896</a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-title">
+        <h2>Get In Touch</h2>
+        <p>Serving Clayton, Ohio</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-box">
+          <h3>📞 Phone</h3>
+          <p><a href="tel:9375542896">937-554-2896</a></p>
+        </div>
+        <div class="contact-box">
+          <h3>✉️ Email</h3>
+          <p><a href="mailto:brotherinlawns937@gmail.com">brotherinlawns937@gmail.com</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Brother in Lawns · Dyson & Trevor · Clayton, Ohio</p>
+  </footer>
+</body>
+</html>
